@@ -1,0 +1,177 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPjChROq9AFhtD4j0Qnn9Ek",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/zovios/projeto-de-programa-o/blob/main/aula%20dia%2010\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#entrada\n",
+        "\n",
+        "numero = float(input(\"digite um numero:\"))\n",
+        "\n",
+        "#processamento / saida\n",
+        "\n",
+        "if numero % 2 == 0:\n",
+        "\n",
+        "  print (f\"o numero é par\")\n",
+        "\n",
+        "else:\n",
+        "\n",
+        "  print (f\"o numero é impar\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "EkcKz2yi-9-I",
+        "outputId": "de127768-d95d-490f-ea83-153e438305c7"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite um numero:3\n",
+            "o numero é impar\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "p9fR5CBw8obd"
+      },
+      "outputs": [],
+      "source": [
+        "#entrada\n",
+        "\n",
+        "# não permitir que o usuario digite notas menores que zero ou maiores que 10\n",
+        "# media menor que 5 - reprovado\n",
+        "# media menor ou igual a 7 - aprovado"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nota1 = float (input(\"digite sua nota aqui:\"))\n",
+        "\n",
+        "if nota1 < 0 or nota1 > 10:\n",
+        "  print (\"nota invalida, insira nota novamente\")\n",
+        "  nota1 = float (input (\"digite aqui a sua nota:\"))\n",
+        "\n",
+        "nota2 = float (input(\"digite sua nota aqui:\"))\n",
+        "\n",
+        "if nota2 < 0 or nota2 > 10:\n",
+        "  print (\"nota invalida, insira nota novamente\")\n",
+        "  nota1 = float (input (\"digite aqui a sua nota:\"))\n",
+        "\n",
+        "nota3 = float (input(\"digite sua nota aqui:\"))\n",
+        "\n",
+        "if nota3 < 0 or nota3 > 10:\n",
+        "  print (\"nota invalida, insira nota novamente\")\n",
+        "  nota1 = float (input (\"digite aqui a sua nota:\"))\n",
+        "\n",
+        "nota4 = float (input(\"digite sua nota aqui:\"))\n",
+        "\n",
+        "if nota4 < 0 or nota4 > 10:\n",
+        "  print (\"nota invalida, insira nota novamente\")\n",
+        "  nota1 = float (input (\"digite aqui a sua nota:\"))\n",
+        "\n",
+        "media = (nota1 + nota2 + nota3 + nota4) / 4\n",
+        "\n",
+        "if media < 5:\n",
+        "  print (\"voce foi reprovado, sua media é : {media}\")\n",
+        "\n",
+        "elif media <= 7:\n",
+        "  print (f\"voce esta de recuperação, sua media é : {media}\")\n",
+        "\n",
+        "else:\n",
+        "  print (f\"voce esta aprovado, sua media é : {media}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "x_sjHFqZFIX6",
+        "outputId": "b9a19848-7864-4e9a-db6c-69ced9c17120"
+      },
+      "execution_count": 32,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite sua nota aqui:9\n",
+            "digite sua nota aqui:11\n",
+            "nota invalida, insira nota novamente\n",
+            "digite aqui a sua nota:8\n",
+            "digite sua nota aqui:7\n",
+            "digite sua nota aqui:6\n",
+            "voce esta aprovado, sua media é : 8.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Escrever um programa que leia o valor da compra e explique\n",
+        "\n",
+        "# até R$ 100 - sem desconto\n",
+        "# até R$ 101 - 10% de desconto\n",
+        "# acima de R$500 - 20% de desconto\n",
+        "\n",
+        "# mostrar o valor a pagar depois de aplicado o desconto\n",
+        "\n",
+        "# variavel\n",
+        "\n",
+        "compra = float (input(\"digite um valor: \"))\n",
+        "\n",
+        "desconto = compra - (compra * 0.10)\n",
+        "\n",
+        "if compra > 100:\n",
+        "  desconto = compra - (compra * 0.10)\n",
+        "  print (f\"o valor a pagar é : {desconto}\")\n",
+        "\n",
+        "elif compra > 500:\n",
+        "  desconto = compra - (compra * 0.20)\n",
+        "  print (f\"o valor a pagar é : {desconto}\")\n",
+        "\n",
+        "else:\n",
+        "  print (f\"voce não obteve desconto, valor a pagar : {compra}\")"
+      ],
+      "metadata": {
+        "id": "XF-ksjpVE_90"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
